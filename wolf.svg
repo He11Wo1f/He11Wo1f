@@ -1,5 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
   <rect width="500" height="500" fill="#000000"/>
+
+  <!-- Глитч-полосы -->
+  <rect x="0" y="140" width="500" height="2" fill="#00FF41" opacity="0.15"/>
+  <rect x="0" y="360" width="500" height="2" fill="#00FF41" opacity="0.10"/>
+
+  <!-- Буква H: две вертикальные стойки + перекладина -->
+  <rect x="90"  y="150" width="26" height="200" fill="#00FF41"/>
+  <rect x="190" y="150" width="26" height="200" fill="#00FF41"/>
+  <rect x="90"  y="238" width="126" height="24" fill="#00FF41"/>
+
+  <!-- Буква W: зигзаг из 4 диагоналей -->
+  <path d="
+    M 250 150
+    L 285 350
+    L 320 220
+    L 355 350
+    L 390 150
+    L 375 150
+    L 345 320
+    L 320 210
+    L 295 320
+    L 265 150
+    Z"
+    fill="#00FF41"/>
+
+  <!-- Глаза волка между H и W (в перекладине H) -->
+  <circle cx="120" cy="250" r="10" fill="#000000"/>
+  <circle cx="176" cy="250" r="10" fill="#000000"/>
+  <circle cx="120" cy="250" r="4"  fill="#00FF41"/>
+  <circle cx="176" cy="250" r="4"  fill="#00FF41"/>
+
+  <!-- Подпись -->
+  <text x="250" y="450"
+        font-family="'JetBrains Mono','Consolas','Courier New',monospace"
+        font-size="26"
+        fill="#00FF41"
+        text-anchor="middle"
+        letter-spacing="6">
+    he11wo1f
+  </text>
+</svg><svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <rect width="500" height="500" fill="#000000"/>
   
   <text x="250" y="360"
         font-family="'JetBrains Mono','Consolas','Courier New',monospace"
