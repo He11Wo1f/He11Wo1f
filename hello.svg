@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="90" viewBox="0 0 500 90">
+  <style>
+    .term {
+      font-family: 'JetBrains Mono', 'Consolas', monospace;
+      font-size: 20px;
+      fill: #C2B280;
+    }
+    .cursor {
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+
+  <text x="20" y="35" class="term">$ echo "hello, world"</text>
+  <text x="20" y="70" class="term">hello, world<tspan class="cursor">▌</tspan></text>
+</svg>
