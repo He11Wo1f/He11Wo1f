@@ -1,19 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="500" height="90" viewBox="0 0 500 90">
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="120" viewBox="0 0 560 120">
   <style>
     .term {
-      font-family: 'JetBrains Mono', 'Consolas', monospace;
-      font-size: 20px;
-      fill: #C2B280;
+      font-family: 'JetBrains Mono', 'Consolas', 'Courier New', monospace;
+      font-size: 22px;
+      fill: #00FF41;
     }
+    .prompt { fill: #00FF41; opacity: 0.7; }
     .cursor {
       animation: blink 1s step-end infinite;
     }
     @keyframes blink {
       0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
+      50%      { opacity: 0; }
+    }
+    .scanline {
+      animation: scan 6s linear infinite;
+      opacity: 0.05;
+    }
+    @keyframes scan {
+      0%   { transform: translateY(0); }
+      100% { transform: translateY(120px); }
     }
   </style>
 
-  <text x="20" y="35" class="term">$ echo "hello, world"</text>
-  <text x="20" y="70" class="term">hello, world<tspan class="cursor">▌</tspan></text>
+  <!-- Чёрный фон -->
+  <rect width="560" height="120" fill="#000000"/>
+
+  <!-- Лёгкий зелёный оттенок вокруг (свечение CRT) -->
+  <rect width="560" height="120" fill="#00FF41" opacity="0.03"/>
+
+  <!-- Бегущая строка сканирования -->
+  <rect class="scanline" x="0" y="0" width="560" height="2" fill="#00FF41"/>
+
+  <!-- Первая строка: команда -->
+  <text x="20" y="45" class="term">
+    <tspan class="prompt">he11wo1f@github:~$</tspan> echo "hello, world"
+  </text>
+
+  <!-- Вторая строка: ответ -->
+  <text x="20" y="85" class="term">
+    hello, world<tspan class="cursor">█</tspan>
+  </text>
 </svg>
