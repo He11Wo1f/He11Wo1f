@@ -1,6 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
   <rect width="500" height="500" fill="#000000"/>
 
+  <!-- Глитч-линии для матричного настроения -->
+  <rect x="0" y="120" width="500" height="2" fill="#00FF41" opacity="0.12"/>
+  <rect x="0" y="380" width="500" height="2" fill="#00FF41" opacity="0.08"/>
+
+  <!-- Силуэт головы волка в профиль (морда вправо) -->
+  <path d="
+    M 120 380
+    L 120 320
+    C 120 280, 130 250, 150 230
+    L 130 180
+    L 160 200
+    L 180 150
+    L 210 190
+    C 240 170, 280 170, 310 190
+    L 350 160
+    L 350 210
+    C 370 230, 380 260, 380 290
+    C 380 320, 360 340, 340 355
+    L 340 380
+    Z"
+    fill="#00FF41"/>
+
+  <!-- Глаз (вырез в силуэте) -->
+  <circle cx="270" cy="240" r="10" fill="#000000"/>
+  <circle cx="272" cy="238" r="3" fill="#00FF41"/>
+
+  <!-- Нос (вырез) -->
+  <circle cx="355" cy="300" r="6" fill="#000000"/>
+
+  <!-- Ухо (треугольник, отдельный элемент) -->
+  <path d="M 175 175 L 195 135 L 215 178 Z" fill="#00FF41"/>
+
+  <!-- Подпись -->
+  <text x="250" y="460"
+        font-family="'JetBrains Mono','Consolas','Courier New',monospace"
+        font-size="26"
+        fill="#00FF41"
+        text-anchor="middle"
+        letter-spacing="4">
+    he11wo1f
+  </text>
+</svg><svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <rect width="500" height="500" fill="#000000"/>
+
   <!-- Глитч-сдвиг (тонкая зелёная полоса) -->
   <rect x="0" y="175" width="500" height="4" fill="#00FF41" opacity="0.15"/>
   <rect x="0" y="320" width="500" height="2" fill="#00FF41" opacity="0.08"/>
