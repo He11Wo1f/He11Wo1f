@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <rect width="500" height="500" fill="#000000"/>
+
+  <!-- Глитч-сдвиг (тонкая зелёная полоса) -->
+  <rect x="0" y="175" width="500" height="4" fill="#00FF41" opacity="0.15"/>
+  <rect x="0" y="320" width="500" height="2" fill="#00FF41" opacity="0.08"/>
+
+  <!-- Волчий профиль: одна непрерывная линия -->
+  <path d="
+    M 140 380
+    L 140 200
+    L 110 200
+    L 110 160
+    L 140 160
+    L 140 130
+    L 170 100
+    L 200 100
+    L 200 70
+    L 230 40
+    L 260 40
+    L 290 70
+    L 290 100
+    L 320 100
+    L 350 130
+    L 350 160
+    L 380 160
+    L 380 200
+    L 350 200
+    L 350 240
+    L 320 240
+    L 320 260
+    L 340 260
+    L 340 300
+    L 300 300
+    L 300 340
+    L 260 340
+    L 260 380
+    Z"
+    fill="none"
+    stroke="#00FF41"
+    stroke-width="6"
+    stroke-linejoin="round"
+    stroke-linecap="round"/>
+
+  <!-- Глаз -->
+  <circle cx="260" cy="130" r="8" fill="#00FF41"/>
+  <circle cx="260" cy="130" r="3" fill="#000000"/>
+
+  <!-- Подпись -->
+  <text x="250" y="460"
+        font-family="'JetBrains Mono','Consolas','Courier New',monospace"
+        font-size="28"
+        fill="#00FF41"
+        text-anchor="middle"
+        letter-spacing="4">
+    he11wo1f
+  </text>
+</svg>
